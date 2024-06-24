@@ -60,8 +60,8 @@
 
 <body>
     <form id="emailForm" th:action="send-otp" th:method="post" th:object="${forgotDto}" onsubmit="return validateEmail()">
-        <h2>Forgot Password</h2>
-        <label for="email">Email:</label>
+        <h2>Forgot Email</h2>
+        <label for="email">phone Number:</label>
         <input type="email" th:field="*{email}" id="email" name="email" required>
         <div th:if="${errorMessage}" class="error-message">
 			<p th:text="${errorMessage}"></p>
